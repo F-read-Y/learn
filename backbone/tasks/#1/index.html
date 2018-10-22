@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>backbone</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous"></script>
+	<script src="js/backbone.js"></script>
+	<script async src="js/index.js"></script>
+</head>
+<body>
+
+	<div id="menu"> <!-- Блок меню -->
+	    <ul>
+	        <li><a href="#!/">Start</a></li>
+	        <li><a href="#!/success">Success</a></li>
+	        <li><a href="#!/error">Error</a></li>
+	    </ul>
+	</div>
+
+	
+	<div id="start" class="block">
+		<div class="userplace">
+		    <label for="username">Имя пользователя: </label>
+		    <input type="text" id="username" />
+		</div>
+		<div class="buttonplace">
+		    <input type="button" value="Проверить" />
+		</div>
+	</div>
+	<div id="error" class="block">
+		Ошибка такой пользователь не найден.
+	</div>
+	<div id="success" class="block">
+		Пользователь найден.
+	</div>
+	
+</body>
+</html>
