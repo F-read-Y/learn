@@ -7,12 +7,23 @@ class Clock extends React.Component {
 		}
 	}
 
+	// Сработает в момент инициализации компонента
 	componentDidMount() {
-
+		this.timerID = setInterval(
+			() => this.tick(),
+			1000
+		);
 	}
 
+	// Сработает в момент удаления компонента
 	componentWillUnmount() {
-		
+		clearInterval(this.timerID);
+	}
+
+	tick() {
+		this.setState({
+			date: new Date()
+		});
 	}
 
 	render() {
@@ -29,4 +40,3 @@ ReactDOM.render(
 	<Clock />,
 	document.getElementById('root')
 );
-
