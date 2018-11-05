@@ -1,0 +1,21 @@
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form textarea {
+  width: 100%;
+  background-color: pink;
+  border: none;
+  padding: 100px;
+  font-size: 100px;
+  color: green;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

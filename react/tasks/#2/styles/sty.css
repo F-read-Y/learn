@@ -1,0 +1,21 @@
+body, .tablo {
+	display: flex;
+	justify-content: center;
+}
+
+.tablo {
+	flex-direction: column;
+	align-items: center;
+}
+
+.tablo p {
+	font-size: 30px;
+	color: gray;
+	padding: 20px;
+	border: solid 1px gray;
+	border-radius: 10px;
+}
+
+p.zero {
+	color: lightgray;
+}

@@ -1,0 +1,30 @@
+body {
+	display: flex;
+	justify-content: center;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 75px;
+	height: 75px;
+	border: solid 1px gray;
+	margin: 3px;
+	font-size: 25px;
+	background-color: brown;
+	color: white;
+}
+
+.start_td {
+	background-color: black;
+	border-radius: 100px;
+}
+
+.gen_td div {
+	background-color: purple;
+}

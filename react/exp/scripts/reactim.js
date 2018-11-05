@@ -1,12 +1,28 @@
-class UserGreeting extends React.Component {
+class LifeTextArea extends React.Component {
+	constructor(props) {
+		super(props),
+		this.state = {
+			value: '',
+		}
+	}
+
+	applyValue = event => {
+		this.setState({
+			value: event.target.value,
+		});
+	}
+
 	render() {
-		return <h1>Hello {this.props.name}</h1>
+		return (
+			<div>
+				<textarea onChange={this.applyValue}></textarea>
+				<p>{this.state.value.length}</p>
+			</div>
+		);
 	}
 }
 
-var person = <UserGreeting name="Charly" />
-
 ReactDOM.render(
-	person,
+	<LifeTextArea />,
 	document.getElementById('root')
 );
